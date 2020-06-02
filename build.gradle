@@ -14,3 +14,16 @@ sourceSets {
         }
     }
 }
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.gb.leaderelection.LeaderElectionMain'
+    }
+}
+dependencies {
+    compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.6.1'
+}
