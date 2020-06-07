@@ -112,7 +112,6 @@ public class LeaderElection implements Watcher {
         System.out.println("Getting the volunteers or nominees...");
 
 
-
         List<String> nodes = zooKeeper.getChildren(ELECTION_NAMESPACE, false);
         Collections.sort(nodes);
 
@@ -122,7 +121,7 @@ public class LeaderElection implements Watcher {
             return;
         }
 
-        for (String nominee: nodes) {
+        for (String nominee : nodes) {
             System.out.println("Nominee " + nominee);
         }
 
@@ -133,7 +132,13 @@ public class LeaderElection implements Watcher {
             System.out.println("Current Leader is " + Nodes.INSTANCE.getCurrentLeader());
         }
 
-        System.out.println("Successful re-election. Elected" +
+        Nodes.INSTANCE.setCurrentLeader(nodes.get(0)
+                .replace(ELECTION_NAMESPACE + "/", ""));
+
+        System.out.println("Successful re-election. Elected " +
                 Nodes.INSTANCE.getCurrentLeader());
+
+        zooKeeper.exists(ELECTION_NAMESPACE + "/" + Nodes.INSTANCE.getCurrentLeader(),
+                this);
     }
 }
