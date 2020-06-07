@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41e51ae2-3cce-4324-b97d-79decc82014a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/leaderelection/keeper/LeaderElection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/leaderelection/keeper/LeaderElection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +21,37 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="leaderelection" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="leaderelection" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="leaderelection" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -25,6 +60,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="gopalbala &lt;balasubramaniangopalakrishnan@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -39,7 +79,79 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.LeaderElectionMain">
+    <configuration name="LeaderElectionMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gb.leaderelection.LeaderElectionMain" />
+      <module name="leaderelection.main" />
+      <option name="VM_PARAMETERS" value="-Dorg.gradle.jvmargs=-Xmx2g" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gb.leaderelection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leaderelection [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="leaderelection [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.LeaderElectionMain" />
+      <item itemvalue="Gradle.leaderelection [assemble]" />
+      <item itemvalue="Gradle.leaderelection [jar]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.leaderelection [jar]" />
+        <item itemvalue="Gradle.leaderelection [assemble]" />
+        <item itemvalue="Application.LeaderElectionMain" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -52,6 +164,127 @@
       <option name="presentableId" value="Default" />
       <updated>1591074228290</updated>
     </task>
+    <task id="LOCAL-00001" summary="added code for  LeaderElection">
+      <created>1591536017754</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591536017754</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added code to connect and close">
+      <created>1591536330173</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591536330173</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Driver code.">
+      <created>1591536780850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591536780850</updated>
+    </task>
+    <task id="LOCAL-00004" summary="jar config">
+      <created>1591545913353</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591545913353</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added code for  LeaderElection" />
+    <MESSAGE value="Added code to connect and close" />
+    <MESSAGE value="Driver code." />
+    <MESSAGE value="jar config" />
+    <option name="LAST_COMMIT_MESSAGE" value="jar config" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="200" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591542957934">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="360" y="200" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1591542957934" />
+    <state x="709" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1591086668758">
+      <screen x="0" y="23" width="1792" height="1034" />
+    </state>
+    <state x="709" y="255" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1034@0.23.1792.1034" timestamp="1591086668758" />
+    <state x="520" y="136" key="CommitChangelistDialog2" timestamp="1591545913151">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="520" y="136" key="CommitChangelistDialog2/0.23.1792.1031@0.23.1792.1031" timestamp="1591545913151" />
+    <state width="1750" height="281" key="GridCell.Tab.0.bottom" timestamp="1591546362544">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="281" key="GridCell.Tab.0.bottom/0.23.1792.1031@0.23.1792.1031" timestamp="1591546362544" />
+    <state width="1750" height="281" key="GridCell.Tab.0.center" timestamp="1591546362543">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="281" key="GridCell.Tab.0.center/0.23.1792.1031@0.23.1792.1031" timestamp="1591546362543" />
+    <state width="1750" height="281" key="GridCell.Tab.0.left" timestamp="1591546362543">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="281" key="GridCell.Tab.0.left/0.23.1792.1031@0.23.1792.1031" timestamp="1591546362543" />
+    <state width="1750" height="281" key="GridCell.Tab.0.right" timestamp="1591546362544">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="281" key="GridCell.Tab.0.right/0.23.1792.1031@0.23.1792.1031" timestamp="1591546362544" />
+    <state width="1750" height="347" key="GridCell.Tab.1.bottom" timestamp="1591544988064">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="347" key="GridCell.Tab.1.bottom/0.23.1792.1031@0.23.1792.1031" timestamp="1591544988064" />
+    <state width="1750" height="347" key="GridCell.Tab.1.center" timestamp="1591544988064">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="347" key="GridCell.Tab.1.center/0.23.1792.1031@0.23.1792.1031" timestamp="1591544988064" />
+    <state width="1750" height="347" key="GridCell.Tab.1.left" timestamp="1591544988064">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="347" key="GridCell.Tab.1.left/0.23.1792.1031@0.23.1792.1031" timestamp="1591544988064" />
+    <state width="1750" height="347" key="GridCell.Tab.1.right" timestamp="1591544988064">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state width="1750" height="347" key="GridCell.Tab.1.right/0.23.1792.1031@0.23.1792.1031" timestamp="1591544988064" />
+    <state x="670" y="256" key="RollbackChangesDialog" timestamp="1591545921287">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="670" y="256" key="RollbackChangesDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1591545921287" />
+    <state x="496" y="278" key="Vcs.Push.Dialog.v2" timestamp="1591536782395">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="496" y="278" key="Vcs.Push.Dialog.v2/0.23.1792.1031@0.23.1792.1031" timestamp="1591536782395" />
+    <state x="573" y="371" key="com.intellij.ide.util.TipDialog" timestamp="1591530780021">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="573" y="371" key="com.intellij.ide.util.TipDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1591530780021" />
+    <state x="273" y="152" key="new project wizard" timestamp="1591543820307">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="273" y="152" key="new project wizard/0.23.1792.1031@0.23.1792.1031" timestamp="1591543820307" />
+    <state x="561" y="251" key="search.everywhere.popup" timestamp="1591539208543">
+      <screen x="0" y="23" width="1792" height="1031" />
+    </state>
+    <state x="561" y="251" key="search.everywhere.popup/0.23.1792.1031@0.23.1792.1031" timestamp="1591539208543" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gb/leaderelection/LeaderElectionMain.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/gb/leaderelection/LeaderElectionMain.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

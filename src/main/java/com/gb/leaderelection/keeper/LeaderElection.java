@@ -31,7 +31,9 @@ public class LeaderElection implements Watcher {
                 try {
                     reelectLeader(event);
                 } catch (InterruptedException e) {
+                    e.printStackTrace();
                 } catch (KeeperException e) {
+                    e.printStackTrace();
                 }
                 break;
             case NodeCreated:
@@ -87,6 +89,8 @@ public class LeaderElection implements Watcher {
         if (Nodes.INSTANCE.getCurrentLeader() == nodes.get(0)) {
             System.out.println("Leader is " + Nodes.INSTANCE.getCurrentLeader());
         }
+        zooKeeper.exists(ELECTION_NAMESPACE + "/" + Nodes.INSTANCE.getCurrentLeader(),
+                this);
     }
 
     public void reelectLeader(WatchedEvent watchedEvent) throws KeeperException, InterruptedException {
@@ -129,6 +133,7 @@ public class LeaderElection implements Watcher {
             System.out.println("Current Leader is " + Nodes.INSTANCE.getCurrentLeader());
         }
 
-        System.out.println("Successful re-election.");
+        System.out.println("Successful re-election. Elected" +
+                Nodes.INSTANCE.getCurrentLeader());
     }
 }
