@@ -3,12 +3,12 @@ package com.gb.leaderelection.keeper;
 import org.apache.commons.lang.StringUtils;
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
-import org.w3c.dom.Node;
 
+import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-import static com.gb.leaderelection.common.LeaderElectionConstants.ELECTION_NAMESPACE;
+import static com.gb.leaderelection.common.LeaderElectionConstants.*;
 
 public class LeaderElection implements Watcher {
 
@@ -36,7 +36,7 @@ public class LeaderElection implements Watcher {
                 break;
             case NodeCreated:
                 try {
-                   volunteerForLeadership();
+                    volunteerForLeadership();
                 } catch (InterruptedException e) {
                 } catch (KeeperException e) {
                 }
@@ -45,6 +45,20 @@ public class LeaderElection implements Watcher {
                 System.out.println("Leader updated progress of task");
                 break;
         }
+    }
+
+    public void run() throws InterruptedException {
+        synchronized (zooKeeper) {
+            zooKeeper.wait();
+        }
+    }
+
+    public void close() throws InterruptedException {
+        zooKeeper.close();
+    }
+
+    public void connect() throws IOException {
+        this.zooKeeper = new ZooKeeper(ZOOKEEPER_ADDRESS, SESSION_TIMEOUT, this);
     }
 
     public void volunteerForLeadership() throws KeeperException, InterruptedException {
